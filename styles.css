@@ -173,13 +173,10 @@ body {
     min-height: 100dvh;
   }
 
-  #mainImage {
-    width: 300%;
-    max-width: none;
-  }
 
   #zoomContainer {
     touch-action: none;
+    width: fit-content;
   }
 
   .header-row {

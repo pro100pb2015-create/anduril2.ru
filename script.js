@@ -75,13 +75,19 @@ const zoomContainer = document.getElementById("zoomContainer");
 
 if (zoomContainer) {
   const panzoom = Panzoom(zoomContainer, {
-    maxScale: 5,
     minScale: 1,
-    contain: "outside",
+    maxScale: 5,
+    startScale: 2,
+    contain: "none",
   });
 
-  zoomContainer.parentElement.addEventListener(
-    "wheel",
-    panzoom.zoomWithWheel
-  );
+  const parent = zoomContainer.parentElement;
+
+  parent.addEventListener("wheel", panzoom.zoomWithWheel);
+
+  parent.addEventListener("touchstart", panzoom.handleTouch, {
+    passive: false,
+  });
+
+  parent.addEventListener("pointerdown", panzoom.handleDown);
 }
