@@ -78,6 +78,7 @@ if (zoomContainer) {
     minScale: 1,
     maxScale: 5,
     startScale: 2,
+    step: 0.25,
     contain: "none",
   });
 
