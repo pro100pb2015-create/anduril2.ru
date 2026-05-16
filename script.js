@@ -70,3 +70,18 @@ if (copyLinkBtn && copyToast) {
     }, 1100);
   });
 }
+
+const zoomContainer = document.getElementById("zoomContainer");
+
+if (zoomContainer) {
+  const panzoom = Panzoom(zoomContainer, {
+    maxScale: 5,
+    minScale: 1,
+    contain: "outside",
+  });
+
+  zoomContainer.parentElement.addEventListener(
+    "wheel",
+    panzoom.zoomWithWheel
+  );
+}

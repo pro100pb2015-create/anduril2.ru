@@ -4,53 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>anduril2.ru</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <div class="header-row">
       <div class="top-actions">
         <div class="top-title">
           <div>Anduril 2 UI RU</div>
+
           <div class="top-title-meta">
             <span>Ver 2.1.0 (14.05.2026)</span>
           </div>
         </div>
+
         <div class="top-buttons">
           <div class="copy-wrap">
-            <button class="icon-button copy-button" id="copyLinkBtn" type="button">
+            <button
+              class="icon-button copy-button"
+              id="copyLinkBtn"
+              type="button"
+            >
               <img src="copy-simple-fill.svg" alt="" />
               <span>Ссылка</span>
             </button>
           </div>
-          <button class="icon-button" id="downloadImageBtn" type="button">
+
+          <button
+            class="icon-button"
+            id="downloadImageBtn"
+            type="button"
+          >
             <img src="arrow-fat-down-fill.svg" alt="" />
             <span class="download-label">Скачать</span>
           </button>
         </div>
       </div>
+
       <button
         class="support-button"
         type="button"
         onclick="window.open('https://pay.cloudtips.ru/p/5271c43c', '_blank', 'noopener')"
       >
         <img src="cardholder-fill.svg" alt="" />
-        <span class="desktop-only">Поддержать автора</span>
-        <span class="mobile-only">Поддержать</span>
+
+        <span class="desktop-only">
+          Поддержать автора
+        </span>
+
+        <span class="mobile-only">
+          Поддержать
+        </span>
       </button>
     </div>
-    <div class="copy-toast" id="copyToast" role="status" aria-live="polite">
+
+    <div
+      class="copy-toast"
+      id="copyToast"
+      role="status"
+      aria-live="polite"
+    >
       <img src="check-fat-fill.svg" alt="" />
       <span>Ссылка скопирована</span>
     </div>
+
     <div class="image-wrap">
-      <img id="mainImage" src="anduril2-ui.jpg" alt="Anduril 2 UI diagram" />
+      <div id="zoomContainer">
+        <img
+          id="mainImage"
+          src="anduril2-ui.jpg"
+          alt="Anduril 2 UI diagram"
+        />
+      </div>
     </div>
+
+    <script src="https://unpkg.com/@panzoom/panzoom/dist/panzoom.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

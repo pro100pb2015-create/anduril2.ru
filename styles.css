@@ -178,6 +178,10 @@ body {
     max-width: none;
   }
 
+  #zoomContainer {
+    touch-action: none;
+  }
+
   .header-row {
     display: flex;
     flex-direction: column;
