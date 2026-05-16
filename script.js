@@ -80,6 +80,7 @@ if (zoomContainer) {
     startScale: 2,
     step: 0.25,
     animate: false,
+    duration: 0,
     contain: "none",
   });
 
