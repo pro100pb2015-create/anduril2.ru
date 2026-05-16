@@ -94,3 +94,4 @@ if (zoomContainer) {
 
   parent.addEventListener("pointerdown", panzoom.handleDown);
 }
+
