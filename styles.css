@@ -5,8 +5,11 @@ body {
 }
 
 .header-row {
+  position: sticky;
+  top: 16px;
+  z-index: 50;
   margin: 16px;
-  padding: 8px 8px 8px 20px;
+  padding: 6px 6px 6px 20px;
   display: flex;
   align-items: center;
   border-radius: 12px;
@@ -43,7 +46,7 @@ body {
 }
 
 .support-button {
-  height: 56px;
+  height: 48px;
   padding: 0 24px;
   border: 0;
   border-radius: 12px;
@@ -66,8 +69,8 @@ body {
 }
 
 .icon-button {
-  width: 56px;
-  height: 56px;
+  width: 48px;
+  height: 48px;
   margin-left: 8px;
   border: 0;
   border-radius: 12px;
@@ -277,17 +280,24 @@ body {
   }
 
   .copy-toast {
-    position: fixed;
-    top: 50%;
-    left: 12px;
-    right: 12px;
-    width: auto;
-    margin: 0;
-    z-index: 25;
+    position: fixed !important;
+  
+    top: 88px !important;
+    left: 12px !important;
+    right: 12px !important;
+  
+    width: auto !important;
+  
+    z-index: 99999 !important;
+  
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(calc(-50% - 6px));
+  
+    margin: 0 !important;
+  
+    transform: none !important;
+  
     box-sizing: border-box;
   }
 
