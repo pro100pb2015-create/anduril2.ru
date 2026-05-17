@@ -77,7 +77,7 @@ if (zoomContainer && window.innerWidth <= 768) {
   const panzoom = Panzoom(zoomContainer, {
     minScale: 1,
     maxScale: 5,
-    startScale: 1.3,
+    startScale: 1.6,
     step: 0.25,
     animate: false,
     duration: 0,
