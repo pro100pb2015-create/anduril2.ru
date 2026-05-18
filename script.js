@@ -95,3 +95,19 @@ if (zoomContainer && window.innerWidth <= 768) {
   parent.addEventListener("pointerdown", panzoom.handleDown);
 }
 
+
+const preloader = document.getElementById('preloader');
+
+window.addEventListener('load', () => {
+  if (!preloader) {
+    return;
+  }
+
+  setTimeout(() => {
+    preloader.classList.add('is-hidden');
+
+    setTimeout(() => {
+      preloader.remove();
+    }, 400);
+  }, 700);
+});
